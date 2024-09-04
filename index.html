@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="staticrypt-html">
     <head>
+	<meta name="robots" content="noindex,nofollow">
         <meta charset="utf-8" />
-        <title>Protected Page</title>
+        <title>REC: Vidéos hebdomadaires 2024</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- do not cache this page -->
@@ -73,8 +74,9 @@
 
             .staticrypt-form .staticrypt-decrypt-button {
                 text-transform: uppercase;
+		border-radius: 10px;
                 outline: 0;
-                background: #4CAF50;
+                background: #2c85d0;
                 width: 100%;
                 border: 0;
                 padding: 15px;
@@ -86,8 +88,8 @@
             .staticrypt-form .staticrypt-decrypt-button:hover,
             .staticrypt-form .staticrypt-decrypt-button:active,
             .staticrypt-form .staticrypt-decrypt-button:focus {
-                background: #4CAF50;
-                filter: brightness(92%);
+                background: #2c85d0;
+                filter: brightness(120%);
             }
 
             .staticrypt-html {
@@ -102,8 +104,8 @@
             .staticrypt-content {
                 height: 100%;
                 margin-bottom: 1em;
-                background: #76B852;
-                font-family: "Arial", sans-serif;
+                background: #2c85d0;
+                font-family: 'Roboto';font-size: 15px;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
@@ -113,8 +115,11 @@
                 margin-bottom: 1em;
             }
 
-            .staticrypt-title {
+            .staticrypt-title {	
+		font-weight: bold;
+		color:#2c85d0;
                 font-size: 1.5em;
+		text-align: left;
             }
 
             label.staticrypt-remember {
@@ -176,7 +181,7 @@
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">Protected Page</p>
+                        <p class="staticrypt-title">REC: Vidéos hebdomadaires 2024</p>
                         <p></p>
                     </div>
 
@@ -188,7 +193,7 @@
                                 id="staticrypt-password"
                                 type="password"
                                 name="password"
-                                placeholder="Password"
+                                placeholder="mot de passe"
                                 autofocus
                             />
 
@@ -202,10 +207,10 @@
 
                         <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
                             <input id="staticrypt-remember" type="checkbox" name="remember" />
-                            Remember me
+                            Se souvenir de moi
                         </label>
 
-                        <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT" />
+                        <input type="submit" class="staticrypt-decrypt-button" value="Décrypter" />
                     </form>
                 </div>
             </div>
@@ -811,7 +816,7 @@ exports.init = init;
   return exports;
 })());
         ;
-            const templateError = "template_error",
+            const templateError = "Mauvais mot de passe...",
                 templateToggleAltShow = "template_toggle_show",
                 templateToggleAltHide = "template_toggle_hide",
                 isRememberEnabled = true,
